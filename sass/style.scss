@@ -1,3 +1,14 @@
+@import "variables";
 @import "bourbon/bourbon";
 @import "neat/neat";
 @import "base/base";
+
+section {
+	display: block;
+	width: 100%;
+	@include clearfix;
+}
+
+.container {
+	@include outer-container;
+}
