@@ -16,6 +16,23 @@ section {
 	padding: $gutter;
 }
 
+header {
+	h1 {
+		@include hide-text;
+	  	background-image: url(../img/forma-header-blue-orange.png);
+	  	background-size: contain;
+		background-repeat: no-repeat;
+
+		span {
+			visibility: hidden;
+		}
+	}
+}
+
+.notice {
+	display: none;
+}
+
 .welcome {
 //	background-color: $westar;
 }
