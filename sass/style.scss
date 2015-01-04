@@ -4,25 +4,5 @@
 @import "base/base";
 @import "neat/neat";
 
-
-body {
-	margin: 0;
-	padding: 0;
-	background-color: $pampas;
-	color: $mine-shaft;
-}
-
-section {
-	display: block;
-	width: 100%;
-	@include clearfix;
-}
-
-.container {
-	@include outer-container;
-	padding: $gutter;
-}
-
-.welcome {
-//	background-color: $westar;
-}
+@import "layout";
+@import "map";
