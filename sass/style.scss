@@ -1,7 +1,16 @@
 @import "variables";
+
 @import "bourbon/bourbon";
-@import "neat/neat";
 @import "base/base";
+@import "neat/neat";
+
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: $pampas;
+	color: $mine-shaft;
+}
 
 section {
 	display: block;
@@ -11,4 +20,9 @@ section {
 
 .container {
 	@include outer-container;
+	padding: $gutter;
+}
+
+.welcome {
+//	background-color: $westar;
 }
