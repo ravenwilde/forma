@@ -1,6 +1,6 @@
 // Typography
-$sans-serif: $helvetica;
-$serif: $georgia;
+$sans-serif: 'Questrial', sans-serif;
+$serif: 'Sanchez', serif;
 $base-font-family: $sans-serif;
 $header-font-family: $base-font-family;
 
@@ -23,6 +23,29 @@ $base-spacing: $base-line-height * 1em;
 $base-z-index: 0;
 
 // Colors
+
+// Used in header image
+$terracotta		: #E08649;
+$te-papa-green  : #204246;
+$bismark		: #487b86;
+$blue-diane		: #224B52;
+
+// Additional
+$matrix 		: #b75654;
+$sunglo			: #E56C69;
+
+// Greys
+$dove-grey		: #636363;
+$mine-shaft		: #313131;
+$white			: #ffffff;
+
+// Neutrals
+/// Cool
+$porcelain		: #ECF0F1;
+/// Warm
+$westar			: #E2DFD8;
+$pampas			: #eeebe4;
+
 $blue: #477DCA;
 $dark-gray: #333;
 $medium-gray: #999;
@@ -32,11 +55,11 @@ $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
 
 // Background Color
-$base-background-color: white;
+$base-background-color: $pampas;
 
 // Font Colors
-$base-font-color: $dark-gray;
-$base-accent-color: $blue;
+$base-font-color: $mine-shaft;
+$base-accent-color: $bismark;
 
 // Link Colors
 $base-link-color: $base-accent-color;

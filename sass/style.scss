@@ -1,8 +1,10 @@
-@import "variables";
+@import url(http://fonts.googleapis.com/css?family=Questrial);
+@import url(http://fonts.googleapis.com/css?family=Sanchez:400italic,400);
 
 @import "bourbon/bourbon";
 @import "base/base";
 @import "neat/neat";
 
+@import "typography";
 @import "layout";
 @import "map";

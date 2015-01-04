@@ -1,8 +1,6 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: $pampas;
-	color: $mine-shaft;
 }
 
 section {
@@ -22,6 +20,8 @@ header {
 	  	background-image: url(../img/forma-header-blue-orange.png);
 	  	background-size: contain;
 		background-repeat: no-repeat;
+		font-size: 5.25em;
+		text-align: center;
 
 		span {
 			visibility: hidden;
