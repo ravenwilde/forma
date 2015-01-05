@@ -451,6 +451,9 @@ header h1 {
       width: 65.88078%; }
       header h1:last-child {
         margin-right: 0; } }
+header h2 {
+  display: block;
+  clear: both; }
 
 .welcome .hours,
 .welcome .address {
