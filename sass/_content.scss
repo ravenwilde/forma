@@ -96,6 +96,10 @@ header {
 	}
 	.attn {
 		@include span-columns(4);
+		@include media($large-screen-up) {
+			@include span-columns(10);
+			@include shift(1);
+		}
 	}
 }
 
@@ -132,5 +136,97 @@ header {
 	}	
 }
 
+.visit {
+	background-color: $westar;
+	.left-col {
+		@include span-columns(4);
+		@include media($medium-large-screen-up) {
+			@include span-columns(8);
+		}
+	}
+
+	.right-col {
+		@include span-columns(4);
+		@include media($medium-large-screen-up) {
+			@include span-columns(4);
+			@include omega;
+		}
+	}
+}
+
+.social {
+	
+
+	.address,
+	.review,
+	.mailChimp {
+		@include span-columns(4);
+	}
+
+	.address {
+		@include media($tablet-small-screen-up) {
+			@include span-columns(3);		
+		}
+		@include media($medium-large-screen-up) {
+			@include span-columns(4);		
+		}
+	}
+
+	.review {
+		@include media($tablet-small-screen-up) {
+			@include span-columns(3);
+			@include omega;		
+		}
+		@include media($medium-large-screen-up) {
+			@include span-columns(4);		
+		}
+	}
+
+	.mailChimp {
+		@include media($tablet-small-screen-up) {
+			@include span-columns(4);
+			@include shift(1);		
+		}
+		@include media($medium-large-screen-up) {
+			@include span-columns(4);
+			@include shift(0);		
+		}
+
+		fieldset {
+		background: $sunglo;
+		border: 1px solid darken($sunglo,20);
+		color: $white;
+		}
+	}
+
+	.address {
+		//margin-top: 2.2em;
+		@include media($tablet-small-screen-up) {
+		//	@include omega;
+		//	margin-top: 0;
+		}
+
+		span[itemprop="streetAddress"] {
+			display: block;
+		}
+		span[itemprop="addressLocality"],
+		span[itemprop="addressRegion"] {
+			display: inline-block;
+		}
+		span[itemprop="postalCode"] {
+			display: block;
+		}
+		span[itemprop="telephone"] {
+			
+		}
+	}
+}
+
+footer {
+	background-color: $te-papa-green;
+	color: $white;
+	text-align: center;
+	padding: $base-spacing;
+}
 
 

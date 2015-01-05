@@ -314,7 +314,7 @@ code {
 
 #content ul,
 #content ol {
-  margin: 0;
+  margin: 0 0 1.5em;
   padding: 0 0 0 1.5em;
   list-style-type: circle; }
 .sliding-menu-button {
@@ -490,6 +490,15 @@ header h1 {
   width: 100%; }
   .welcome .attn:last-child {
     margin-right: 0; }
+  @media screen and (min-width: 53.75em) {
+    .welcome .attn {
+      float: left;
+      display: block;
+      margin-right: 1.35446%;
+      width: 83.10759%;
+      margin-left: 8.4462%; }
+      .welcome .attn:last-child {
+        margin-right: 0; } }
 
 .classes-equip {
   background-color: #E2DFD8; }
@@ -539,6 +548,120 @@ header h1 {
   .yarn .right-col {
     margin-right: 0; } }
 
+.visit {
+  background-color: #E2DFD8; }
+  .visit .left-col {
+    float: left;
+    display: block;
+    margin-right: 4.17652%;
+    width: 100%; }
+    .visit .left-col:last-child {
+      margin-right: 0; }
+    @media screen and (min-width: 46.875em) {
+      .visit .left-col {
+        float: left;
+        display: block;
+        margin-right: 1.35446%;
+        width: 66.21518%; }
+        .visit .left-col:last-child {
+          margin-right: 0; } }
+  .visit .right-col {
+    float: left;
+    display: block;
+    margin-right: 4.17652%;
+    width: 100%; }
+    .visit .right-col:last-child {
+      margin-right: 0; }
+    @media screen and (min-width: 46.875em) {
+      .visit .right-col {
+        float: left;
+        display: block;
+        margin-right: 1.35446%;
+        width: 32.43036%;
+        margin-right: 0; }
+        .visit .right-col:last-child {
+          margin-right: 0; } }
+
+.social .address,
+.social .review,
+.social .mailChimp {
+  float: left;
+  display: block;
+  margin-right: 4.17652%;
+  width: 100%; }
+  .social .address:last-child,
+  .social .review:last-child,
+  .social .mailChimp:last-child {
+    margin-right: 0; }
+@media screen and (min-width: 35em) {
+  .social .address {
+    float: left;
+    display: block;
+    margin-right: 2.74611%;
+    width: 48.62694%; }
+    .social .address:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 46.875em) {
+  .social .address {
+    float: left;
+    display: block;
+    margin-right: 1.35446%;
+    width: 32.43036%; }
+    .social .address:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 35em) {
+  .social .review {
+    float: left;
+    display: block;
+    margin-right: 2.74611%;
+    width: 48.62694%;
+    margin-right: 0; }
+    .social .review:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 46.875em) {
+  .social .review {
+    float: left;
+    display: block;
+    margin-right: 1.35446%;
+    width: 32.43036%; }
+    .social .review:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 35em) {
+  .social .mailChimp {
+    float: left;
+    display: block;
+    margin-right: 2.74611%;
+    width: 65.7513%;
+    margin-left: 17.12435%; }
+    .social .mailChimp:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 46.875em) {
+  .social .mailChimp {
+    float: left;
+    display: block;
+    margin-right: 1.35446%;
+    width: 32.43036%;
+    margin-left: 0%; }
+    .social .mailChimp:last-child {
+      margin-right: 0; } }
+.social .mailChimp fieldset {
+  background: #E56C69;
+  border: 1px solid #c62622;
+  color: #ffffff; }
+.social .address span[itemprop="streetAddress"] {
+  display: block; }
+.social .address span[itemprop="addressLocality"],
+.social .address span[itemprop="addressRegion"] {
+  display: inline-block; }
+.social .address span[itemprop="postalCode"] {
+  display: block; }
+
+footer {
+  background-color: #204246;
+  color: #ffffff;
+  text-align: center;
+  padding: 1.5em; }
+
 .expander-trigger {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -567,9 +690,6 @@ header h1 {
 
 .expander-hidden + .expander-content {
   display: none; }
-
-.expander-content {
-  padding-bottom: 1.5em; }
 
 @media screen and (min-width: 35em) {
   .expander-hidden + .expander-content {

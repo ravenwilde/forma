@@ -42,7 +42,7 @@ $expander-toggle-margin: 1em;
 }
 
 .expander-content {
-  padding-bottom: $base-spacing;
+  //padding-bottom: $base-spacing;
 }
 
 @include media($tablet-small-screen-up) {
