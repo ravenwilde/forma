@@ -1,0 +1,52 @@
+$expander-arrow-width: 5px;
+$expander-toggle-size: 1em;
+$expander-toggle-arrow-size: $expander-toggle-size;
+$expander-toggle-margin: 1em;
+
+.expander {
+  //margin: auto;
+  //width: 60%;
+}
+
+.expander-trigger {
+  @include user-select(none);
+  border-bottom: 1px solid $light-gray;
+  cursor: pointer;
+  display: block;
+  font-size: $expander-toggle-size;
+  margin-bottom: $expander-toggle-size;
+  padding-bottom: $expander-toggle-size / 4;
+
+  &:before {
+    content: '\25BC';
+    font-size: $expander-toggle-arrow-size;
+    margin-right: .5em;
+    @include media($tablet-small-screen-up) {
+      content: ' ';
+      margin-right: 0;
+    }
+  }
+}
+
+.expander-hidden {
+  &:before {
+    content: '\25BA';
+    @include media($tablet-small-screen-up) {
+      content: ' ';
+    }
+  }
+}
+
+.expander-hidden + .expander-content {
+  display: none;
+}
+
+.expander-content {
+  padding-bottom: $base-spacing;
+}
+
+@include media($tablet-small-screen-up) {
+  .expander-hidden + .expander-content {
+    display: block;
+  }
+}

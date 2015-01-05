@@ -116,5 +116,21 @@ header {
 	}
 }
 
+.yarn {
+	.left-col,
+	.right-col {
+		@include span-columns(4);
+		@include media($tablet-small-screen-up) {
+			@include span-columns(3);
+		}
+	}
+
+	.right-col {
+		@include media($tablet-small-screen-up) {
+			@include omega;
+		}
+	}	
+}
+
 
 
