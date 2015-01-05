@@ -5,6 +5,8 @@
 @import "base/base";
 @import "neat/neat";
 
+@import "mixins-utils";
 @import "typography";
-@import "layout";
+@import "navigation";
+@import "content";
 @import "map";

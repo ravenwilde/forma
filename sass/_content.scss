@@ -1,0 +1,120 @@
+body {
+	margin: 0;
+	padding: 0;
+	//@include highlight-breakpoint;
+}
+
+#navigation {
+	position: fixed;
+	width: 2.75em;
+	height: 100%;
+	background-color: $te-papa-green;
+	z-index: 5000;
+}
+#content {
+	position: relative;
+	//width: 100%;
+	margin-left: 2.75em;
+}
+
+section {
+	display: block;
+	width: 100%;
+	@include clearfix;
+	padding: $gutter;
+
+}
+
+.container {
+	@include outer-container;
+	
+}
+
+header {
+	h1 {
+		span {
+			@extend .visuallyhidden;
+		}
+
+		@include better-retina-image(forma-header-blue-orange, contain);	  	
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 3em;
+
+		@include media($mobile-large-screen-up) {
+			height:4em;
+		}
+		@include media($medium-screen-up) {
+			height:3em;
+		}
+		@include media($large-screen-up) {
+			height:4em;
+			@include span-columns(8);
+			//@include shift(2);
+		}
+	}
+}
+
+.welcome {
+	.hours,
+	.address {
+		@include span-columns(4);
+		@include media($tablet-small-screen-up) {
+			@include span-columns(3);
+		}
+		@include media($large-screen-up) {
+			@include span-columns(3);
+		}
+	}
+
+	.hours {
+		@include media($large-screen-up) {
+			@include shift(1);
+		}
+	}
+
+	.address {
+		margin-top: 2.2em;
+		@include media($tablet-small-screen-up) {
+			@include omega;
+			margin-top: 0;
+		}
+
+		span[itemprop="streetAddress"] {
+			display: block;
+		}
+		span[itemprop="addressLocality"],
+		span[itemprop="addressRegion"] {
+			display: inline-block;
+		}
+		span[itemprop="postalCode"] {
+			display: block;
+		}
+		span[itemprop="telephone"] {
+			
+		}
+	}
+	.attn {
+		@include span-columns(4);
+	}
+}
+
+.classes-equip {
+	background-color: $westar;
+	.classes,
+	.equip {
+		@include span-columns(4);
+		@include media($tablet-small-screen-up) {
+			@include span-columns(3);
+		}
+	}
+
+	.equip {
+		@include media($tablet-small-screen-up) {
+			@include omega;
+		}
+	}
+}
+
+
+

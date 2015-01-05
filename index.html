@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/modernizr.js"></script>
+    <script src="js/forma.js"></script>
     
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script>
@@ -71,241 +72,257 @@
   <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-  <section class="hero">
-    <div class="container">
-      <header>
-        <h1><span>Forma</span></h1>
-        <!-- <p>We specialize in yarn and equipment for hand-weaving, knitting, spinning and dyeing.</p> -->
-      </header>
-    </div>
-  </section>
-  <section class="notice">
-    <div class="container">
-      
-    </div>
-  </section>
-  <section class="welcome">
-    <div class="container">
+  <div id="navigation">
+    <button type="button" class="js-menu-trigger sliding-menu-button">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/menu-white.png" alt="Menu Icon">
+    </button>
 
-      <div itemscope itemtype="http://schema.org/LocalBusiness" class="address">
-        <h2 itemprop="name" class="visuallyhidden">Forma</h2>
-        <p itemprop="paymentAccepted" class="visuallyhidden">We accept cash or check</p>
-        <h3>Visit us at:</h3>
-        <div itemtype="http://schema.org/GeoCoordinates" itemscope="" itemprop="geo">
-            <meta itemprop="latitude" content="42.357916" />
-            <meta itemprop="longitude" content="-83.747747" />
-        </div>
-        <div itemtype="http://schema.org/PostalAddress" itemscope="" itemprop="address">
-            <p itemprop="streetAddress">
-              <!-- <span class="icon-map-marker"></span>&nbsp; -->
-              111 Northfield Church Road
-              <span itemprop="addressLocality">Whitmore Lake</span>, 
-              <span itemprop="addressRegion">MI</span>
-              <span itemprop="postalCode">48149-9542</span>
-            </p>
-        </div>
-        <div>
-            <p>Or call us at:<br />
-            <span class="icon-phone-sign"></span>&nbsp;<span itemprop="telephone"><strong>734-761-1102</strong></span></p>
-        </div>
-      </div>
-
-      <h3>Business Hours:</h3>
+    <nav class="js-menu sliding-menu-content">
       <ul>
-        <li>Wed: 10:00-11:30am &amp; 1-5:30pm</li>
-        <li>Thur: 10:00-11:30am &amp; 1-6:30pm</li>
-        <li>Fri: 10:00-11:30am &amp; 1-5:30pm</li>
-        <li>Sat: 10:00am-5:30pm</li>
+        <li><a href="javascript:void(0)">Item 1</a></li>
+        <li><a href="javascript:void(0)">Item 2</a></li>
+        <li><a href="javascript:void(0)">Item 3</a></li>
       </ul>
+    </nav>
 
-      <p class="attn">Sorry, We Do NOT Accept Credit Cards! Cash and Check ONLY</p>
+    <div class="js-menu-screen menu-screen"></div>
+  </div>
 
-    </div>
-  </section>
-  <section class="classes-equip">
-    <div class="container">
-      <div>
-        <h2>Classes</h2>
-        <p>We regularly host onsite weaving classes taught by the wonderful and talented Sondra Hoffman. Space is limited, so please call us for more information!</p>
+  <div id="content">
+    <section class="hero">
+      <div class="container">
+        <header>
+          <h1><span>Forma</span></h1>
+          <!-- <p>We specialize in yarn and equipment for hand-weaving, knitting, spinning and dyeing.</p> -->
+        </header>
+      </div>
+    </section>
+    <section class="notice visuallyhidden">
+      <div class="container">
+        
+      </div>
+    </section>
+    <section class="welcome">
+      <div class="container">
 
-        <h3>Class Schedule 2014</h3>
+        <div class="hours">
+          <h3>Business Hours:</h3>
+          <ul>
+            <li>Wed: 10:00-11:30am &amp; 1-5:30pm</li>
+            <li>Thur: 10:00-11:30am &amp; 1-6:30pm</li>
+            <li>Fri: 10:00-11:30am &amp; 1-5:30pm</li>
+            <li>Sat: 10:00am-5:30pm</li>
+          </ul>
+        </div>
+
+        <div class="address" itemscope itemtype="http://schema.org/LocalBusiness">
+          <h2 itemprop="name" class="visuallyhidden">Forma</h2>
+          <p itemprop="paymentAccepted" class="visuallyhidden">We accept cash or check</p>
+          <h3>Visit us at:</h3>
+            <div itemtype="http://schema.org/GeoCoordinates" itemscope="" itemprop="geo" class="visuallyhidden">
+                <meta itemprop="latitude" content="42.357916" />
+                <meta itemprop="longitude" content="-83.747747" />
+            </div>
+          <p itemtype="http://schema.org/PostalAddress" itemscope="" itemprop="address">
+            <!-- <span class="icon-map-marker"></span>&nbsp; -->
+            <span itemprop="streetAddress">111 Northfield Church Road</span>
+            <span itemprop="addressLocality">Whitmore Lake,</span> 
+            <span itemprop="addressRegion">MI</span>
+            <span itemprop="postalCode">48149-9542</span>
+          </p>
+          <p>Or call us at: 
+          <span itemprop="telephone">734-761-1102</span></p>
+          
+        </div>
+        
+        <p class="attn">Sorry, We Do NOT Accept Credit Cards! Cash and Check ONLY</p>
+
+      </div>
+    </section>
+    <section class="classes-equip">
+      <div class="container">
+        <div class="classes">
+          <h2>Classes</h2>
+          <p>We regularly host onsite weaving classes taught by the wonderful and talented Sondra Hoffman. Space is limited, so please call us for more information!</p>
+
+          <h3>Class Schedule 2014</h3>
+          <ul>
+            <li>Weaving I (Beginning) - Feb 6th thru April 3rd</li>
+            <li>Weaving II (Color &amp; Weave) - April 17th thru June 5th</li>
+            <li>Double Weave - June 19th thru Aug 7th</li>
+            <li>Rep Weave (seats still available - please call) - Dates TBA</li>
+            <li>Structures (seats still availabe - please call) - Dates TBA</li>
+            <li>Overshot (seats still available - please call) - Dates TBA</li>
+            <li>Hand Manipulated Lace (seats still available - please call) - Dates TBA</li>
+          </ul>
+          
+          <p>All classes are 8 weeks long and are scheduled for Thursday evenings from 7-9:30. The cost for each class is $135.</p>
+        </div>
+
+        <div class="equip">  
+          <h2>Equipment</h2>
+          <p>FORMA is proud to be a licensed dealer of LeClerc and Schact Looms &amp; Accessories.</p>
+          <h3>We have in stock:</h3>
+          <ul>
+            <li>LeClerc and Schact Looms</li>
+            <li>Boat Shuttles</li>
+            <li>Ski Shuttles</li>
+            <li>Flat Shuttles</li>
+            <li>Bobbins</li>
+            <li>Pick up Sticks</li>
+            <li>Ball Winders</li>
+            <li>Warping Boards</li>
+            <li>Warping Mills/Reels</li>
+            <li>Spolmaskin - Swedish Bobbin Winders &amp; Umbrella Swifts</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+    <section class="yarn">
+      <div class="container">
+
+        <h2>Yarn</h2>
+        <p>We are stocked with a wide variety of yarn in a FULL RANGE OF COLORS for both weavers and knitters</p>
+        
+        <h3>New Item: Merino Wool!</h3>
         <ul>
-          <li>Weaving I (Beginning) - Feb 6th thru April 3rd</li>
-          <li>Weaving II (Color &amp; Weave) - April 17th thru June 5th</li>
-          <li>Double Weave - June 19th thru Aug 7th</li>
-          <li>Rep Weave (seats still available - please call) - Dates TBA</li>
-          <li>Structures (seats still availabe - please call) - Dates TBA</li>
-          <li>Overshot (seats still available - please call) - Dates TBA</li>
-          <li>Hand Manipulated Lace (seats still available - please call) - Dates TBA</li>
+          <li>Hand space dyed skeins by Tracey Schuh</li>
+          <li>1100 Yards per approx 8 ounce skein 100% Superwash Merino Wool</li>
+        </ul>
+            
+        <h3>Brown Sheep Wool &amp; Mohair</h3>
+        <ul>
+          <li>Full Line of Colors!</li>
+          <li>Lamb's Pride</li>
+          <li>Burly Spun</li>
+        </ul>
+            
+        <h3>UKI Mercerized Cotton</h3>
+        <ul>
+          <li>FULL LINE OF COLORS IN ALL WEIGHTS</li>
+          <li>3/2 5/2 10/2 20/2</li>
+        </ul>
+      
+        <h3>Super-10 Mercerized Cotton</h3>
+        <ul>
+          <li>FULL LINE OF COLORS</li>
+        </ul>
+            
+        <h3>Cotton</h3>
+        <ul>
+          <li>20/6 Tencel in hand space-dyed skeins and natural cones</li>
+          <li>Carded Cotton 4/2 5/2 6/2 8/2 10/2</li>
+          <li>Cotton Flake- Assorted weights</li>
+          <li>20/6 Bamboo-Cotton Natural Cones</li>
         </ul>
         
-        <p>All classes are 8 weeks long and are scheduled for Thursday evenings from 7-9:30. The cost for each class is $135.</p>
-      </div>
-
-      <div>  
-        <h2>Equipment</h2>
-        <p>FORMA is proud to be a licensed dealer of LeClerc and Schact Looms &amp; Accessories.</p>
-        <h3>We have in stock:</h3>
+        <h3>Linen Rug Warp 7/5 &amp; 7/10</h3>
+        
+        <h3>Bamboo</h3>
         <ul>
-          <li>LeClerc and Schact Looms</li>
-          <li>Boat Shuttles</li>
-          <li>Ski Shuttles</li>
-          <li>Flat Shuttles</li>
-          <li>Bobbins</li>
-          <li>Pick up Sticks</li>
-          <li>Ball Winders</li>
-          <li>Warping Boards</li>
-          <li>Warping Mills/Reels</li>
-          <li>Spolmaskin - Swedish Bobbin Winders &amp; Umbrella Swifts</li>
+          <li>New Shipments!</li>
         </ul>
+               
+        <h3>Rayon</h3>
+        <ul>
+          <li>Full line of Colors in Multiple Weights, 6/2 8/2 10/2</li>
+          <li>Rayon Boucle "Rick Rack" solid color cones and hand space-dyed skeins</li>
+          <li>8/2 Ring spun rayon in a multitude of colors</li>
+          <li>20/6 Bamboo-Rayon Natural Cones</li>
+        </ul>
+              
+        <h3>Rayon Chenile</h3>
+        <ul>
+          <li>Solid Colors &amp; Space Dyed</li>
+          <li>Special Prices on Space Dyed Rayon Chenile By the Cone!</li>
+        </ul>
+
+        <h3>Blends</h3>
+        <ul>
+          <li>Cravenella Type- Wool &amp; Rayon or Wool &amp; Nylon</li>
+          <li>3-ply Wool &amp; Silk</li>
+          <li>Rayon/Cotton/Flax</li>
+          <li>Rayon/Cotton/Linen</li>
+          <li>Cotton/Linen</li>
+        </ul>
+
+        <h3>Mohair Loop</h3>
+        <ul>
+          <li>Loop Yarn- Multiple Weights &amp; Colors</li>
+          <li>72% Mohair/13% Wool/13% Nylon</li>
+        </ul>
+
       </div>
-
-    </div>
-  </section>
-  <section class="yarn">
-    <div class="container">
-
-      <h2>Yarn</h2>
-      <p>We are stocked with a wide variety of yarn in a FULL RANGE OF COLORS for both weavers and knitters</p>
-      
-      <h3>New Item: Merino Wool!</h3>
-      <ul>
-        <li>Hand space dyed skeins by Tracey Schuh</li>
-        <li>1100 Yards per approx 8 ounce skein 100% Superwash Merino Wool</li>
-      </ul>
-          
-      <h3>Brown Sheep Wool &amp; Mohair</h3>
-      <ul>
-        <li>Full Line of Colors!</li>
-        <li>Lamb's Pride</li>
-        <li>Burly Spun</li>
-      </ul>
-          
-      <h3>UKI Mercerized Cotton</h3>
-      <ul>
-        <li>FULL LINE OF COLORS IN ALL WEIGHTS</li>
-        <li>3/2 5/2 10/2 20/2</li>
-      </ul>
-    
-      <h3>Super-10 Mercerized Cotton</h3>
-      <ul>
-        <li>FULL LINE OF COLORS</li>
-      </ul>
-          
-      <h3>Cotton</h3>
-      <ul>
-        <li>20/6 Tencel in hand space-dyed skeins and natural cones</li>
-        <li>Carded Cotton 4/2 5/2 6/2 8/2 10/2</li>
-        <li>Cotton Flake- Assorted weights</li>
-        <li>20/6 Bamboo-Cotton Natural Cones</li>
-      </ul>
-      
-      <h3>Linen Rug Warp 7/5 &amp; 7/10</h3>
-      
-      <h3>Bamboo</h3>
-      <ul>
-        <li>New Shipments!</li>
-      </ul>
-             
-      <h3>Rayon</h3>
-      <ul>
-        <li>Full line of Colors in Multiple Weights, 6/2 8/2 10/2</li>
-        <li>Rayon Boucle "Rick Rack" solid color cones and hand space-dyed skeins</li>
-        <li>8/2 Ring spun rayon in a multitude of colors</li>
-        <li>20/6 Bamboo-Rayon Natural Cones</li>
-      </ul>
-            
-      <h3>Rayon Chenile</h3>
-      <ul>
-        <li>Solid Colors &amp; Space Dyed</li>
-        <li>Special Prices on Space Dyed Rayon Chenile By the Cone!</li>
-      </ul>
-
-      <h3>Blends</h3>
-      <ul>
-        <li>Cravenella Type- Wool &amp; Rayon or Wool &amp; Nylon</li>
-        <li>3-ply Wool &amp; Silk</li>
-        <li>Rayon/Cotton/Flax</li>
-        <li>Rayon/Cotton/Linen</li>
-        <li>Cotton/Linen</li>
-      </ul>
-
-      <h3>Mohair Loop</h3>
-      <ul>
-        <li>Loop Yarn- Multiple Weights &amp; Colors</li>
-        <li>72% Mohair/13% Wool/13% Nylon</li>
-      </ul>
-
-    </div>
-  </section>
-  <section class="visit">
-    
+    </section>
     <div id="map_canvas"></div>
+    <section class="visit">
+      <div class="container">
+        <h2>Visit Us!</h2>
+        <p>We'll admit it, we are sort of out of the way...</p>
+        <p>But we're really not that hard to find!</p>
+        <ul>
+          <li>Get off US-23 North or South at exit 49</li>
+          <li>Take Whitmore Lake Rd south to Joy Road</li>
+          <li>Follow Joy back over US-23 and then turn immediately left onto East Northfield Church Road.</li>
+          <li>Take Northfield Church until it makes a sharp right turn. At the bend of this turn is our driveway, marked out by an old stone gate.</li>
+          <li>Please feel free to check out Google Maps for a larger view of the area and plan your trip according to your needs.</li>
+        </ul>
 
-    <div class="container">
-      <h2>Visit Us!</h2>
-      <p>We'll admit it, we are sort of out of the way...</p>
-      <p>But we're really not that hard to find!</p>
-      <ul>
-        <li>Get off US-23 North or South at exit 49</li>
-        <li>Take Whitmore Lake Rd south to Joy Road</li>
-        <li>Follow Joy back over US-23 and then turn immediately left onto East Northfield Church Road.</li>
-        <li>Take Northfield Church until it makes a sharp right turn. At the bend of this turn is our driveway, marked out by an old stone gate.</li>
-        <li>Please feel free to check out Google Maps for a larger view of the area and plan your trip according to your needs.</li>
-      </ul>
-
-      <h3>IMPORTANT!</h3> 
-      <p>Joy Rd (and many others in the area) is unpaved; so it is always best to come by way of Whitmore Lake Road.</p>
-    </div>
-  </section>
-  <section class="social">
-    <div class="container">
-      <div>
-      <h3>We hope to see you soon!</h3>
-      <div itemtype="http://schema.org/PostalAddress" itemscope="" itemprop="address">
-      <p itemprop="streetAddress"><!-- <span class="icon-map-marker"></span>&nbsp; --><strong>Forma - Since 1972<br />
-      111 Northfield Church Road</strong><br />
-      <span itemprop="addressLocality"><strong>Whitmore Lake</strong></span>, <span itemprop="addressRegion"><strong>MI</strong></span><br /> 
-      <span itemprop="postalCode"><strong>48149-9542</strong></span>
-      </p>
+        <h3>IMPORTANT!</h3> 
+        <p>Joy Rd (and many others in the area) is unpaved; so it is always best to come by way of Whitmore Lake Road.</p>
       </div>
+    </section>
+    <section class="social">
+      <div class="container">
+        <div>
+        <h3>We hope to see you soon!</h3>
+        <div itemtype="http://schema.org/PostalAddress" itemscope="" itemprop="address">
+        <p itemprop="streetAddress"><!-- <span class="icon-map-marker"></span>&nbsp; --><strong>Forma - Since 1972<br />
+        111 Northfield Church Road</strong><br />
+        <span itemprop="addressLocality"><strong>Whitmore Lake</strong></span>, <span itemprop="addressRegion"><strong>MI</strong></span><br /> 
+        <span itemprop="postalCode"><strong>48149-9542</strong></span>
+        </p>
+        </div>
 
-      <p class="clear">Longtime Customer and Fan of FORMA?<br />
-      Share your Love by writing us a review on...<br />
-      <a href="http://local.yahoo.com/info-16203974-forma-whitmore-lake;_ylt=AlX3d483hdpc2IfayJ7Ez62HNcIF;_ylv=3?csz=Whitmore+Lake,+MI+48189">Yahoo!</a> or <a href="http://maps.google.com/maps/place?um=1&ie=UTF-8&q=forma+michigan&fb=1&gl=us&hq=forma&hnear=Michigan&cid=13779433848303550445&ei=of4tTLznH5bqnQfuqPCDBA&sa=X&oi=local_result&ct=result&resnum=1&ved=0CBMQnQIwAA">Google</a></p>
+        <p class="clear">Longtime Customer and Fan of FORMA?<br />
+        Share your Love by writing us a review on...<br />
+        <a href="http://local.yahoo.com/info-16203974-forma-whitmore-lake;_ylt=AlX3d483hdpc2IfayJ7Ez62HNcIF;_ylv=3?csz=Whitmore+Lake,+MI+48189">Yahoo!</a> or <a href="http://maps.google.com/maps/place?um=1&ie=UTF-8&q=forma+michigan&fb=1&gl=us&hq=forma&hnear=Michigan&cid=13779433848303550445&ei=of4tTLznH5bqnQfuqPCDBA&sa=X&oi=local_result&ct=result&resnum=1&ved=0CBMQnQIwAA">Google</a></p>
+        </div>
+        <div class="mailChimp"><!-- RIGHT COLUMN -->
+        <!-- Begin MailChimp Signup Form -->
+        <div id="mc_embed_signup">
+        <form action="http://forma-fiberarts.us6.list-manage.com/subscribe/post?u=414a431234&amp;id=be589ca51e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+        <h3>Subscribe to our mailing list:</h3>
+
+        <div class="mc-field-group">
+        <label for="mce-EMAIL" class="visuallyhidden">Email Address </label>
+        <input type="email" value="EMAIL ADDRESS" name="EMAIL" class="required email" id="mce-EMAIL">
+        </div>
+
+        <div class="submit"><input type="submit" value="SEND" name="subscribe" id="mc-embedded-subscribe" class="button">
+        </div>
+
+        <div id="mce-responses" class="clear">
+        <div class="response" id="mce-error-response" style="display:none"></div>
+        <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>
+
+        </form>
+        </div>
+
+        <!--End mc_embed_signup-->
+        </div>
+        </div><!-- /END 2 COLUMNS -->    
       </div>
-      <div class="mailChimp"><!-- RIGHT COLUMN -->
-      <!-- Begin MailChimp Signup Form -->
-      <div id="mc_embed_signup">
-      <form action="http://forma-fiberarts.us6.list-manage.com/subscribe/post?u=414a431234&amp;id=be589ca51e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-
-      <h3>Subscribe to our mailing list:</h3>
-
-      <div class="mc-field-group">
-      <label for="mce-EMAIL" class="visuallyhidden">Email Address </label>
-      <input type="email" value="EMAIL ADDRESS" name="EMAIL" class="required email" id="mce-EMAIL">
+    </section>
+    <footer>
+      <div class="container">
+        
       </div>
+    </footer>
+  </div>
 
-      <div class="submit"><input type="submit" value="SEND" name="subscribe" id="mc-embedded-subscribe" class="button">
-      </div>
-
-      <div id="mce-responses" class="clear">
-      <div class="response" id="mce-error-response" style="display:none"></div>
-      <div class="response" id="mce-success-response" style="display:none"></div>
-      </div>
-
-      </form>
-      </div>
-
-      <!--End mc_embed_signup-->
-      </div>
-      </div><!-- /END 2 COLUMNS -->    
-    </div>
-  </section>
-  <footer>
-    <div class="container">
-      
-    </div>
-  </footer>
   </body>
 </html>
