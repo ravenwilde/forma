@@ -5,7 +5,7 @@
  * http://bitters.bourbon.io
  * Copyright 2013–2014 thoughtbot, inc.
  * MIT License */
-button,
+button, .top-button,
 input[type="submit"] {
   -webkit-font-smoothing: antialiased;
   background-color: #487b86;
@@ -17,11 +17,11 @@ input[type="submit"] {
   line-height: 1;
   padding: 0.75em 1em;
   text-decoration: none; }
-  button:hover,
+  button:hover, .top-button:hover,
   input[type="submit"]:hover {
     background-color: #2d4d54;
     color: white; }
-  button:disabled,
+  button:disabled, .top-button:disabled,
   input[type="submit"]:disabled {
     cursor: not-allowed;
     opacity: 0.5; }
@@ -201,7 +201,7 @@ dl {
   dl dd {
     margin: 0; }
 
-button,
+button, .top-button,
 input[type="submit"] {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -317,15 +317,27 @@ code {
   margin: 0 0 1.5em;
   padding: 0 0 0 1.5em;
   list-style-type: circle; }
-.sliding-menu-button {
+.sliding-menu-button, .top-button {
   display: inline-block;
   cursor: pointer;
   font-size: 1em;
-  margin-bottom: 1.5;
   position: relative;
-  outline: none; }
-  .sliding-menu-button img {
-    height: 1.3em; }
+  outline: none;
+  border-radius: 0;
+  width: 2.75em;
+  height: 2.75em;
+  padding: 0; }
+  .sliding-menu-button img, .top-button img {
+    height: 1.5em; }
+
+.top-button {
+  position: absolute;
+  bottom: 0; }
+  .top-button img {
+    height: 1.5em;
+    position: absolute;
+    top: 10px;
+    left: 10px; }
 
 .sliding-menu-content {
   position: fixed;
@@ -343,12 +355,12 @@ code {
   -webkit-transition: all 0.25s linear;
   -moz-transition: all 0.25s linear;
   transition: all 0.25s linear;
-  background: #404040;
+  background: #285258;
   z-index: 999999;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch; }
   .sliding-menu-content li a {
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #204246;
     color: #fff;
     display: block;
     font-weight: bold;
@@ -372,7 +384,7 @@ code {
   -webkit-transition: all 0.15s ease-out 0s;
   -moz-transition: all 0.15s ease-out 0s;
   transition: all 0.15s ease-out 0s;
-  background: #333;
+  background: #204246;
   opacity: 0;
   visibility: hidden;
   z-index: 999998; }
@@ -398,11 +410,13 @@ body {
 section {
   display: block;
   width: 100%;
-  padding: 0.809em; }
+  padding: 2.427em 1.618em; }
   section:after {
     content: "";
     display: table;
     clear: both; }
+  section.hero {
+    padding: 2.427em 1.618em 1.618em; }
 
 .container {
   max-width: 68em;
@@ -417,14 +431,14 @@ header h1 {
   background-image: url("../img/forma-header-blue-orange.png");
   background-repeat: no-repeat;
   width: 100%;
-  height: 3em; }
+  height: 2em; }
   @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
     header h1 {
       background-image: url("../img/forma-header-blue-orange_2x.png");
       background-size: contain; } }
   @media screen and (min-width: 30em) {
     header h1 {
-      height: 4em; } }
+      height: 3.5em; } }
   @media screen and (min-width: 40em) {
     header h1 {
       height: 3em; } }
@@ -433,8 +447,8 @@ header h1 {
       height: 4em;
       float: left;
       display: block;
-      margin-right: 1.35446%;
-      width: 66.21518%; }
+      margin-right: 2.35765%;
+      width: 65.88078%; }
       header h1:last-child {
         margin-right: 0; } }
 
@@ -442,7 +456,7 @@ header h1 {
 .welcome .address {
   float: left;
   display: block;
-  margin-right: 4.17652%;
+  margin-right: 7.42297%;
   width: 100%; }
   .welcome .hours:last-child,
   .welcome .address:last-child {
@@ -452,8 +466,8 @@ header h1 {
     .welcome .address {
       float: left;
       display: block;
-      margin-right: 2.74611%;
-      width: 48.62694%; }
+      margin-right: 4.82916%;
+      width: 47.58542%; }
       .welcome .hours:last-child,
       .welcome .address:last-child {
         margin-right: 0; } }
@@ -462,31 +476,29 @@ header h1 {
     .welcome .address {
       float: left;
       display: block;
-      margin-right: 1.35446%;
-      width: 23.98416%; }
+      margin-right: 2.35765%;
+      width: 23.23176%; }
       .welcome .hours:last-child,
       .welcome .address:last-child {
         margin-right: 0; } }
 @media screen and (min-width: 53.75em) {
   .welcome .hours {
-    margin-left: 8.4462%; } }
-.welcome .address {
-  margin-top: 2.2em; }
-  @media screen and (min-width: 35em) {
-    .welcome .address {
-      margin-right: 0;
-      margin-top: 0; } }
-  .welcome .address span[itemprop="streetAddress"] {
-    display: block; }
-  .welcome .address span[itemprop="addressLocality"],
-  .welcome .address span[itemprop="addressRegion"] {
-    display: inline-block; }
-  .welcome .address span[itemprop="postalCode"] {
-    display: block; }
+    margin-left: 8.5298%; } }
+@media screen and (min-width: 35em) {
+  .welcome .address {
+    margin-right: 0;
+    margin-top: 0; } }
+.welcome .address span[itemprop="streetAddress"] {
+  display: block; }
+.welcome .address span[itemprop="addressLocality"],
+.welcome .address span[itemprop="addressRegion"] {
+  display: inline-block; }
+.welcome .address span[itemprop="postalCode"] {
+  display: block; }
 .welcome .attn {
   float: left;
   display: block;
-  margin-right: 4.17652%;
+  margin-right: 7.42297%;
   width: 100%; }
   .welcome .attn:last-child {
     margin-right: 0; }
@@ -494,9 +506,9 @@ header h1 {
     .welcome .attn {
       float: left;
       display: block;
-      margin-right: 1.35446%;
-      width: 83.10759%;
-      margin-left: 8.4462%; }
+      margin-right: 2.35765%;
+      width: 82.94039%;
+      margin-left: 8.5298%; }
       .welcome .attn:last-child {
         margin-right: 0; } }
 
@@ -506,7 +518,7 @@ header h1 {
   .classes-equip .equip {
     float: left;
     display: block;
-    margin-right: 4.17652%;
+    margin-right: 7.42297%;
     width: 100%; }
     .classes-equip .classes:last-child,
     .classes-equip .equip:last-child {
@@ -516,8 +528,8 @@ header h1 {
       .classes-equip .equip {
         float: left;
         display: block;
-        margin-right: 2.74611%;
-        width: 48.62694%; }
+        margin-right: 4.82916%;
+        width: 47.58542%; }
         .classes-equip .classes:last-child,
         .classes-equip .equip:last-child {
           margin-right: 0; } }
@@ -529,7 +541,7 @@ header h1 {
 .yarn .right-col {
   float: left;
   display: block;
-  margin-right: 4.17652%;
+  margin-right: 7.42297%;
   width: 100%; }
   .yarn .left-col:last-child,
   .yarn .right-col:last-child {
@@ -539,8 +551,8 @@ header h1 {
     .yarn .right-col {
       float: left;
       display: block;
-      margin-right: 2.74611%;
-      width: 48.62694%; }
+      margin-right: 4.82916%;
+      width: 47.58542%; }
       .yarn .left-col:last-child,
       .yarn .right-col:last-child {
         margin-right: 0; } }
@@ -553,7 +565,7 @@ header h1 {
   .visit .left-col {
     float: left;
     display: block;
-    margin-right: 4.17652%;
+    margin-right: 7.42297%;
     width: 100%; }
     .visit .left-col:last-child {
       margin-right: 0; }
@@ -561,14 +573,14 @@ header h1 {
       .visit .left-col {
         float: left;
         display: block;
-        margin-right: 1.35446%;
-        width: 66.21518%; }
+        margin-right: 2.35765%;
+        width: 65.88078%; }
         .visit .left-col:last-child {
           margin-right: 0; } }
   .visit .right-col {
     float: left;
     display: block;
-    margin-right: 4.17652%;
+    margin-right: 7.42297%;
     width: 100%; }
     .visit .right-col:last-child {
       margin-right: 0; }
@@ -576,8 +588,8 @@ header h1 {
       .visit .right-col {
         float: left;
         display: block;
-        margin-right: 1.35446%;
-        width: 32.43036%;
+        margin-right: 2.35765%;
+        width: 31.76157%;
         margin-right: 0; }
         .visit .right-col:last-child {
           margin-right: 0; } }
@@ -587,7 +599,7 @@ header h1 {
 .social .mailChimp {
   float: left;
   display: block;
-  margin-right: 4.17652%;
+  margin-right: 7.42297%;
   width: 100%; }
   .social .address:last-child,
   .social .review:last-child,
@@ -597,24 +609,24 @@ header h1 {
   .social .address {
     float: left;
     display: block;
-    margin-right: 2.74611%;
-    width: 48.62694%; }
+    margin-right: 4.82916%;
+    width: 47.58542%; }
     .social .address:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 46.875em) {
   .social .address {
     float: left;
     display: block;
-    margin-right: 1.35446%;
-    width: 32.43036%; }
+    margin-right: 2.35765%;
+    width: 31.76157%; }
     .social .address:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 35em) {
   .social .review {
     float: left;
     display: block;
-    margin-right: 2.74611%;
-    width: 48.62694%;
+    margin-right: 4.82916%;
+    width: 47.58542%;
     margin-right: 0; }
     .social .review:last-child {
       margin-right: 0; } }
@@ -622,25 +634,25 @@ header h1 {
   .social .review {
     float: left;
     display: block;
-    margin-right: 1.35446%;
-    width: 32.43036%; }
+    margin-right: 2.35765%;
+    width: 31.76157%; }
     .social .review:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 35em) {
   .social .mailChimp {
     float: left;
     display: block;
-    margin-right: 2.74611%;
-    width: 65.7513%;
-    margin-left: 17.12435%; }
+    margin-right: 4.82916%;
+    width: 65.05695%;
+    margin-left: 17.47153%; }
     .social .mailChimp:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 46.875em) {
   .social .mailChimp {
     float: left;
     display: block;
-    margin-right: 1.35446%;
-    width: 32.43036%;
+    margin-right: 2.35765%;
+    width: 31.76157%;
     margin-left: 0%; }
     .social .mailChimp:last-child {
       margin-right: 0; } }

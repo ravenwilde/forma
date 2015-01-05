@@ -1,4 +1,4 @@
-$sliding-menu-border-color: $dark-gray;
+$sliding-menu-border-color: $te-papa-green;
 $sliding-menu-background: lighten($sliding-menu-border-color, 5);
 $sliding-menu-color: #fff;
 $sliding-menu-border: 1px solid $sliding-menu-border-color;
@@ -9,12 +9,29 @@ $sliding-menu-color-hover: #fff;
   display: inline-block;
   cursor: pointer;
   font-size: $base-font-size;
-  margin-bottom: $base-line-height;
   position: relative;
   outline: none;
+  border-radius: 0;
+  width: 2.75em;
+  height: 2.75em;
+  padding: 0;
 
   img {
-    height: 1.3em;
+    height: 1.5em;
+  }
+}
+
+.top-button {
+  @extend button;
+  @extend .sliding-menu-button;
+  position: absolute;
+  bottom: 0;
+
+  img {
+   height: 1.5em;
+   position: absolute;
+   top: 10px;
+   left: 10px; 
   }
 }
 

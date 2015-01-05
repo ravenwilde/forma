@@ -74,14 +74,20 @@
         <![endif]-->
   <div id="navigation">
     <button type="button" class="js-menu-trigger sliding-menu-button">
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/menu-white.png" alt="Menu Icon">
+      <img src="img/menu.png" alt="Menu Icon">
     </button>
+
+    <a class="scroll-on-page-link top-button" href="#content">
+    <img src="img/arrow-up.png" alt="Up Arrow">
+    </a>
 
     <nav class="js-menu sliding-menu-content">
       <ul>
-        <li><a href="javascript:void(0)">Item 1</a></li>
-        <li><a href="javascript:void(0)">Item 2</a></li>
-        <li><a href="javascript:void(0)">Item 3</a></li>
+        <li><a class="scroll-on-page-link" href="#welcome">Information</a></li>
+        <li><a class="scroll-on-page-link" href="#classes">Classes</a></li>
+        <li><a class="scroll-on-page-link" href="#equip">Equipment</a></li>
+        <li><a class="scroll-on-page-link" href="#yarn">Yarn</a></li>
+        <li><a class="scroll-on-page-link" href="#map_canvas">Visit Us!</a></li>
       </ul>
     </nav>
 
@@ -102,7 +108,7 @@
         
       </div>
     </section>
-    <section class="welcome">
+    <section class="welcome" id="welcome">
       <div class="container">
 
         <div class="hours">
@@ -141,7 +147,7 @@
     </section>
     <section class="classes-equip">
       <div class="container">
-        <div class="classes">
+        <div class="classes" id="classes">
           <h2>Classes</h2>
           <p>We regularly host onsite weaving classes taught by the wonderful and talented Sondra Hoffman. Space is limited, so please call us for more information!</p>
 
@@ -159,7 +165,7 @@
           <p>All classes are 8 weeks long and are scheduled for Thursday evenings from 7-9:30. The cost for each class is $135.</p>
         </div>
 
-        <div class="equip">  
+        <div class="equip" id="equip">  
           <h2>Equipment</h2>
           <p>FORMA is proud to be a licensed dealer of LeClerc and Schact Looms &amp; Accessories.</p>
           <h3>We have in stock:</h3>
@@ -179,7 +185,7 @@
 
       </div>
     </section>
-    <section class="yarn">
+    <section class="yarn" id="yarn">
       <div class="container">
 
         <h2>Yarn</h2>
@@ -331,7 +337,7 @@
       
       </div>
     </section>
-    <section class="social">
+    <section class="social" id="social">
       <div class="container">
         <h2>Keep in touch!</h2>
         <div class="address" itemscope itemtype="http://schema.org/LocalBusiness">
