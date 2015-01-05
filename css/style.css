@@ -357,8 +357,7 @@ code {
   transition: all 0.25s linear;
   background: #285258;
   z-index: 999999;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch; }
+  overflow: hidden; }
   .sliding-menu-content li a {
     border-bottom: 1px solid #204246;
     color: #fff;
