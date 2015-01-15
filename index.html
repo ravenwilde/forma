@@ -1,105 +1,105 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Forma Fiber Arts - Yarn, Weaving and Knitting Supplies - Whitmore Lake, MI</title>
-    
-    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    
-    <script src="js/jquery-1.11.2.min.js"></script>
-    <script src="js/modernizr.js"></script>
-    <script src="js/pikabu.js"></script>
-    <script src="js/forma.js"></script>
-    
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script>
-      function initialize() {
-        var myLatlng = new google.maps.LatLng(42.357973,-83.747713);
-        var mapCenter = new google.maps.LatLng(42.357973,-83.747713);
-        var mapCanvas = document.getElementById('map_canvas');
-        var mapOptions = {
-          center: mapCenter,
-          zoom: 11,
-          scrollwheel: false,
-          draggable: true,
-          disableDefaultUI: false,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-
-        var map = new google.maps.Map(mapCanvas, mapOptions)
-
-        map.set('styles', [
-         {
-             featureType: 'landscape',
-             elementType: 'geometry',
-             stylers: [
-               { hue: '#ffff00' },
-               { saturation: 30 },
-               { lightness: 10}
-             ]
-           },
-        ]);
-
-        var contentString = 
-          '<div id="content">'+
-          '<div id="siteNotice">'+
-          '</div>'+
-          '<h1 id="firstHeading" class="firstHeading">Forma</h1>'+
-          '<div id="bodyContent">'+
-          '<p>111 East Northfield Church Road</p>'+
-          '<p>Whitmore Lake, MI</p>'+
-          '<p>USA</p>'+
-          '</div>'+
-          '</div>';
-
-        var infowindow = new google.maps.InfoWindow({
-            content: contentString,
-            maxWidth: 300
-        });
-
-        var marker = new google.maps.Marker({
-            position: myLatlng,
-            map: map,
-            title: 'Forma Fiberarts'
-        });
-        google.maps.event.addListener(marker, 'click', function() {
-          infowindow.open(map,marker);
-        });
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forma Fiber Arts - Yarn, Weaving and Knitting Supplies - Whitmore Lake, MI</title>
+  
+  <link rel="stylesheet" href="css/style.css" />
+  
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/modernizr.js"></script>
+  <script src="js/pikabu.js"></script>
+  <script src="js/forma.js"></script>
+  
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script>
+    function initialize() {
+      var myLatlng = new google.maps.LatLng(42.357973,-83.747713);
+      var mapCenter = new google.maps.LatLng(42.357973,-83.747713);
+      var mapCanvas = document.getElementById('map_canvas');
+      var mapOptions = {
+        center: mapCenter,
+        zoom: 11,
+        scrollwheel: false,
+        draggable: true,
+        disableDefaultUI: false,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
       }
 
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
-  </head>
-  <body>
-  <!--[if lt IE 9]>
-    <p class="chromeframe">You are using an <strong>outdated</strong> browser.</p>
-    <p>Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="https://www.google.com/chrome/browser/desktop/">download Google Chrome</a> to improve your experience.</p>
-    <![endif]-->
-  <div id="navigation">
-    <button type="button" class="js-menu-trigger sliding-menu-button">
-      <img src="img/menu.png" alt="Menu Icon">
-    </button>
+      var map = new google.maps.Map(mapCanvas, mapOptions)
 
-    <a class="scroll-on-page-link top-button" href="#content">
-    <img src="img/arrow-up.png" alt="Up Arrow">
-    </a>
+      map.set('styles', [
+       {
+           featureType: 'landscape',
+           elementType: 'geometry',
+           stylers: [
+             { hue: '#ffff00' },
+             { saturation: 30 },
+             { lightness: 10}
+           ]
+         },
+      ]);
 
-    <nav class="js-menu sliding-menu-content mCustomScrollbar" data-mcs-theme="minimal-dark">
-      <ul>
-        <li><a class="scroll-on-page-link" href="#welcome">Information</a></li>
-        <li><a class="scroll-on-page-link" href="#classes">Classes</a></li>
-        <li><a class="scroll-on-page-link" href="#equip">Equipment</a></li>
-        <li><a class="scroll-on-page-link" href="#yarn">Yarn</a></li>
-        <li><a class="scroll-on-page-link" href="#map_canvas">Visit Us!</a></li>
-      </ul>
+      var contentString = 
+        '<div id="content">'+
+        '<div id="siteNotice">'+
+        '</div>'+
+        '<h1 id="firstHeading" class="firstHeading">Forma</h1>'+
+        '<div id="bodyContent">'+
+        '<p>111 East Northfield Church Road</p>'+
+        '<p>Whitmore Lake, MI</p>'+
+        '<p>USA</p>'+
+        '</div>'+
+        '</div>';
+
+      var infowindow = new google.maps.InfoWindow({
+          content: contentString,
+          maxWidth: 300
+      });
+
+      var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: 'Forma Fiberarts'
+      });
+      google.maps.event.addListener(marker, 'click', function() {
+        infowindow.open(map,marker);
+      });
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+</head>
+<body>
+<!--[if lt IE 9]>
+  <p class="chromeframe">You are using an <strong>outdated</strong> browser.</p>
+  <p>Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="https://www.google.com/chrome/browser/desktop/">download Google Chrome</a> to improve your experience.</p>
+  <![endif]-->
+
+<div class="main-container m-pikabu-viewport">
+  
+  <nav class="m-pikabu-sidebar m-pikabu-left">
+    <ul>
+      <li><a class="scroll-on-page-link" href="#welcome">Information</a></li>
+      <li><a class="scroll-on-page-link" href="#classes">Classes</a></li>
+      <li><a class="scroll-on-page-link" href="#equip">Equipment</a></li>
+      <li><a class="scroll-on-page-link" href="#yarn">Yarn</a></li>
+      <li><a class="scroll-on-page-link" href="#map_canvas">Visit Us!</a></li>
+    </ul>
+  </nav>
+
+  
+
+  <div id="content" class="m-pikabu-container">
+    <nav id="navigation">
+      <button type="button" class="m-pikabu-nav-toggle" data-role="left">
+      </button>
+
+      <!-- <a class="scroll-on-page-link top-button" href="#content">
+      <img src="img/arrow-up.png" alt="Up Arrow">
+      </a> -->
     </nav>
-
-    <div class="js-menu-screen menu-screen"></div>
-  </div>
-
-  <div id="content">
     <!-- <section class="hero">
       <div class="container">
         
@@ -402,6 +402,7 @@
       </div>
     </footer>
   </div>
+</div>
 
-  </body>
+</body>
 </html>
