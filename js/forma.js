@@ -1,14 +1,12 @@
 $(document).ready(function(){
-  $('.js-menu-trigger').on('click touchstart', function(e){
-    $('.js-menu').toggleClass('is-visible');
-    $('.js-menu-screen').toggleClass('is-visible');
-    e.preventDefault();
+  var pikabu = new Pikabu({
+    // Specify left and right sidebar widths independently
+    widths: {
+        left: '220px'
+    }
   });
-
-  $('.js-menu-screen').on('click touchstart', function(e){
-    $('.js-menu').toggleClass('is-visible');
-    $('.js-menu-screen').toggleClass('is-visible');
-    e.preventDefault();
+  $('.m-pikabu-left').pikabu({
+    viewportSelector: '.pikabu-viewport'
   });
 });
 

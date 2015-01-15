@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 // <TODO>: Make these javascript settings
-$leftSidebarWidth: 80% !default; // Width of the left sidebar
-$rightSidebarWidth: 80% !default; // Width of the right sidebar
+$leftSidebarWidth: 220px !default; // Width of the left sidebar
+$rightSidebarWidth: 20% !default; // Width of the right sidebar
 $animation: true !default; // Set to false if you don't want transitions
 
 .m-pikabu-viewport {
@@ -92,4 +92,60 @@ $animation: true !default; // Set to false if you don't want transitions
 // Scrolling
 .m-pikabu-overflow-touch {
     -webkit-overflow-scrolling: touch;
+}
+
+/* line 86, /Users/ted/dev/pikabu/src/scss/pikabu-theme.scss */
+.m-pikabu-nav-toggle {
+  position: relative;
+  float: left;
+  display: block;
+  width: 50px;
+  height: 30px;
+  margin: 10px;
+  background: #fdef6e;
+  border: solid 1px rgba(230, 74, 51, 0.35);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 0 #fcfdf4;
+  -moz-box-shadow: inset 0 1px 0 #fcfdf4;
+  box-shadow: inset 0 1px 0 #fcfdf4;
+  text-indent: 100%;
+  white-space: nowrap;
+  color: #e64a33;
+  line-height: 29px;
+}
+/* line 106, /Users/ted/dev/pikabu/src/scss/pikabu-theme.scss */
+.m-pikabu-nav-toggle[data-role="right"] {
+  float: right;
+}
+/* line 110, /Users/ted/dev/pikabu/src/scss/pikabu-theme.scss */
+.m-pikabu-nav-toggle::after {
+  content: '☰';
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-family: "entypo", sans-serif;
+  text-align: center;
+  text-indent: 0;
+  font-size: 25px;
+  font-weight: bold;
+  color: inherit;
+}
+/* line 128, /Users/ted/dev/pikabu/src/scss/pikabu-theme.scss */
+.m-pikabu-nav-toggle[data-role="right"]::after {
+  content: "\e705";
+  font-size: 17px;
+}
+/* line 134, /Users/ted/dev/pikabu/src/scss/pikabu-theme.scss */
+.m-pikabu-left-visible .m-pikabu-nav-toggle[data-role="left"], .m-pikabu-right-visible .m-pikabu-nav-toggle[data-role="right"] {
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1);
 }
