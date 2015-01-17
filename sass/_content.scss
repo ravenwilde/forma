@@ -11,10 +11,10 @@ body {
 	background-color: $te-papa-green;
 	z-index: 5000;
 }
-#content {
+#container {
 	position: relative;
 	//width: 100%;
-	margin-left: 2.75em;
+	//margin-left: 2.75em;
 }
 
 section {
@@ -22,7 +22,7 @@ section {
 	width: 100%;
 	@include clearfix;
 	padding: $gutter*1.5 $gutter;
-
+	margin-left: 2.75em;
 	&.hero {
 		padding: $gutter*1.5 $gutter $gutter;	
 	}
@@ -31,6 +31,10 @@ section {
 		//padding: $gutter $gutter $gutter*1.5;	
 	}
 
+}
+
+#map_canvas {
+	//margin-left: 2.75em;
 }
 
 .container {
