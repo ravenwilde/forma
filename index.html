@@ -10,7 +10,7 @@
     
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/modernizr.js"></script>
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/pushy.min.js"></script>
     <script src="js/forma.js"></script>
     
     <script src="https://maps.googleapis.com/maps/api/js"></script>
@@ -73,33 +73,33 @@
     </script>
   </head>
   <body>
+  
   <!--[if lt IE 9]>
     <p class="chromeframe">You are using an <strong>outdated</strong> browser.</p>
     <p>Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="https://www.google.com/chrome/browser/desktop/">download Google Chrome</a> to improve your experience.</p>
     <![endif]-->
+
+  <nav class="pushy pushy-left">
+    <ul>
+      <li><a class="scroll-on-page-link" href="#welcome">Information</a></li>
+      <li><a class="scroll-on-page-link" href="#classes">Classes</a></li>
+      <li><a class="scroll-on-page-link" href="#equip">Equipment</a></li>
+      <li><a class="scroll-on-page-link" href="#yarn">Yarn</a></li>
+      <li><a class="scroll-on-page-link" href="#map_canvas">Visit Us!</a></li>
+    </ul>
+  </nav>
+
+  <div class="site-overlay"></div>  
+  
+  <div id="container">
   <div id="navigation">
-    <button type="button" class="js-menu-trigger sliding-menu-button">
+    <button type="button" class="menu-btn js-menu-trigger sliding-menu-button">
       <img src="img/menu.png" alt="Menu Icon">
     </button>
-
     <a class="scroll-on-page-link top-button" href="#content">
     <img src="img/arrow-up.png" alt="Up Arrow">
     </a>
-
-    <nav class="js-menu sliding-menu-content mCustomScrollbar" data-mcs-theme="minimal-dark">
-      <ul>
-        <li><a class="scroll-on-page-link" href="#welcome">Information</a></li>
-        <li><a class="scroll-on-page-link" href="#classes">Classes</a></li>
-        <li><a class="scroll-on-page-link" href="#equip">Equipment</a></li>
-        <li><a class="scroll-on-page-link" href="#yarn">Yarn</a></li>
-        <li><a class="scroll-on-page-link" href="#map_canvas">Visit Us!</a></li>
-      </ul>
-    </nav>
-
-    <div class="js-menu-screen menu-screen"></div>
   </div>
-
-  <div id="content">
     <!-- <section class="hero">
       <div class="container">
         
