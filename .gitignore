@@ -4,5 +4,6 @@
 .sass-cache
 /img/art/*
 /analytics/*
-/perch/*
+/perch/config/*
+/perch/core/*
 perch_v2.7.5.zip
