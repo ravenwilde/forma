@@ -97,12 +97,7 @@
         </header>
         <div class="hours">
           <h3>Business Hours:</h3>
-          <ul>
-            <li>Wed: 10:00-11:30am &amp; 1-5:30pm</li>
-            <li>Thur: 10:00-11:30am &amp; 1-5:30pm</li>
-            <li>Fri: 10:00-11:30am &amp; 1-5:30pm</li>
-            <li>Sat: 10:00am-5:00pm</li>
-          </ul>
+          <?php perch_content('Hours'); ?>
         </div>
 
         <div class="address" itemscope itemtype="http://schema.org/LocalBusiness">
@@ -136,13 +131,7 @@
           <p>We regularly host onsite weaving classes taught by the wonderful and talented Sondra Hoffman. Space is limited, so please call us for more information!</p>
 
           <h3>Class Schedule 2015</h3>
-          <ul>
-            <li>Jan 15th thru Mar 5 - Weaving I (Beginning)</li>
-            <li>Mar 12 thru Apr 30 - Weaving I (Beginning)</li>
-            <li>May 7th thru June 25th - Weaving II (Color &amp; Weave)</li>
-            <li>Aug 27th thru Oct 15th - Overshot</li>
-            <li>Further Classes TBA</li>
-          </ul>
+          <?php perch_content('Class Schedule'); ?>
           
           <p>All classes are 8 weeks long and are scheduled for Thursday evenings from 7-9:30. The cost for each class is $135.</p>
         </div>
