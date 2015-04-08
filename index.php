@@ -133,7 +133,7 @@
           <h3>Class Schedule 2015</h3>
           <?php perch_content('Class Schedule'); ?>
           
-          <p>All classes are 8 weeks long and are scheduled for Thursday evenings from 7-9:30. The cost for each class is $135.</p>
+          <?php perch_content('Class Info'); ?>
         </div>
 
         <div class="equip" id="equip">  
