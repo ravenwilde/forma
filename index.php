@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forma Fiber Arts - Yarn, Weaving and Knitting Supplies - Whitmore Lake, MI</title>
     
-  
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
     <link rel="stylesheet" href="css/style.css" />
     
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/modernizr.js"></script>
-
     <script src="js/forma.js"></script> 
     
     <script src="https://maps.googleapis.com/maps/api/js"></script>
@@ -79,11 +79,6 @@
     <p>Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="https://www.google.com/chrome/browser/desktop/">download Google Chrome</a> to improve your experience.</p>
     <![endif]-->
   <div id="content">
-    <!-- <section class="hero">
-      <div class="container">
-        
-      </div>
-    </section> -->
     <section class="notice visuallyhidden">
       <div class="container">
         
@@ -122,6 +117,13 @@
         
         <p class="attn">Sorry, We Do NOT Accept Credit Cards! Cash and Check ONLY</p>
 
+      </div>
+    </section>
+    <section class="image-slider">
+      <div class="container">
+        <div class="slick-slider">
+          <?php perch_content('Image Slider'); ?>
+        </div>
       </div>
     </section>
     <section class="classes-equip">
@@ -368,6 +370,44 @@
       </div>
     </footer>
   </div>
+  <script src="js/slick.min.js"></script> 
+  <script type="text/javascript">
+    $('.slick-slider').slick({
+      dots: true,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      responsive: [
+        {
+          breakpoint: 860,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 640,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 560,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+  </script>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

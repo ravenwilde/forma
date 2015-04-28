@@ -339,8 +339,8 @@ section {
     content: "";
     display: table;
     clear: both; }
-  section.hero {
-    padding: 2.427em 1.618em 1.618em; }
+  section.image-slider {
+    padding: 2.427em 3.236em 1.618em; }
 
 .container {
   max-width: 68em;
@@ -438,6 +438,15 @@ header h2 {
       margin-left: 8.5298%; }
       .welcome .attn:last-child {
         margin-right: 0; } }
+
+.image-slider {
+  background-color: #487b86; }
+  .image-slider .slick-list {
+    padding: .5em 0; }
+  .image-slider .slick-slide {
+    padding: 0 .5em; }
+    .image-slider .slick-slide img {
+      box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12); }
 
 .classes-equip {
   background-color: #E2DFD8; }

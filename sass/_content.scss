@@ -23,8 +23,9 @@ section {
 	@include clearfix;
 	padding: $gutter*1.5 $gutter;
 
-	&.hero {
-		padding: $gutter*1.5 $gutter $gutter;	
+	// &.hero,
+	&.image-slider {
+		padding: $gutter*1.5 $gutter*2 $gutter;	
 	}
 
 	&.welcome {
@@ -110,6 +111,21 @@ header {
 		@include media($large-screen-up) {
 			@include span-columns(10);
 			@include shift(1);
+		}
+	}
+}
+
+.image-slider {
+	background-color: $bismark;
+
+	.slick-list {
+		padding: .5em 0;
+	}
+
+	.slick-slide {
+		padding: 0 .5em;
+		img {
+			@include card(1);
 		}
 	}
 }
