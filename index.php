@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css" />
     
     <script src="js/jquery-1.11.2.min.js"></script>
-    <script src="js/modernizr.js"></script>
+    <script src="js/modernizr.custom.86647.js"></script>
     <script src="js/forma.js"></script> 
     
     <script src="https://maps.googleapis.com/maps/api/js"></script>
