@@ -9,7 +9,7 @@
 <body>
     <h1><?php perch_content('Main heading'); ?></h1>
 
-    <?php perch_content('Intro'); ?>
+    <?php phpinfo() ?>
     
     <?php perch_get_javascript(); ?>
 </body>

@@ -79,9 +79,12 @@
     <p>Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="https://www.google.com/chrome/browser/desktop/">download Google Chrome</a> to improve your experience.</p>
     <![endif]-->
   <div id="content">
-    <section class="notice visuallyhidden">
+    <section class="notice" id="site-notice">
       <div class="container">
-        
+        <h2>Notice!</h2>
+        <p>We will be <strong>CLOSED</strong> for the month of February, the 1st thru the 28th.</p>
+        <p><strong>We will re-open March 1st, 2017</strong></p>
+        <p>As always, it is always okay to call before making the trek out here - <strong>734-761-1102</strong></p>
       </div>
     </section>
     <section class="welcome" id="welcome">
@@ -132,7 +135,7 @@
           <h2>Classes</h2>
           <p>We regularly host onsite weaving classes taught by the wonderful and talented Sondra Hoffman. Space is limited, so please call us for more information!</p>
 
-          <h3>Class Schedule 2015</h3>
+          <h3>Class Schedule 2017</h3>
           <?php perch_content('Class Schedule'); ?>
           
           <?php perch_content('Class Info'); ?>
